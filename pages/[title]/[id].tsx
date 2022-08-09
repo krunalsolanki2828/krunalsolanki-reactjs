@@ -15,12 +15,11 @@ const ProductDetail = ({ PRODUCT }) => {
             alt=""
             className='max-h-[35vh] md:h-[350px] md:w-[300px] object-contain bg-white rounded-xl'
           />
-          <div className='flex flex-col mt-4 md:pl-5 md:mt-0'>
+          <div className='flex flex-col mt-4 justify-between md:pl-5 md:mt-0'>
             <span className='text-[40px] font-bold'>{PRODUCT.name}</span>
-            <span className='text-[35px] font-extrabold text-green-500'>
-              <span className='font-medium text-gray-300 line-through'>${Number(PRODUCT.price) + 10}</span>  ${PRODUCT.price}
+            <span className='text-[35px] font-extrabol'>
+              ${PRODUCT.price}
             </span>
-            <span className='text-lg font-semibold text-gray-400'>Category: {PRODUCT.category}</span>
           </div>
         </div>
         <hr className='mt-7 mb-5 border-gray-400' />
